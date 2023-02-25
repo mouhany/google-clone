@@ -1,0 +1,50 @@
+* {
+    font-size: 14px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-10 {
+    font-size: 10px;
+}
+
+.img-product,
+.img-account {
+    opacity: 70%;
+}
+
+.img-product {
+    width: 15px;
+}
+
+.img-account {
+    width: 30px;
+}
+
+.main-input {
+    font-size: 16px;
+    border-radius: 3rem;
+    width: 584px;
+    height: 44px;
+    padding: 0 0 0 3rem;
+}
+
+.main-input:hover,
+.main-input:focus {
+    outline: none;
+}
+
+.main-input:hover {
+    border-color: rgba(20, 20, 2, 0.1);
+    box-shadow: 0 0 1px rgba(20, 20, 2, 0.075) inset,
+        0 1px 4px rgba(20, 20, 2, 0.2);
+}
+
+.sub-logo {
+    margin-left: 210px;
+    margin-top: -24px;
+    font-size: 16px;
+    color: #4285f4;
+}

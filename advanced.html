@@ -12,7 +12,6 @@
 			crossorigin="anonymous"
 		/>
 	</head>
-
 	<body>
 		<!-- Header -->
 		<ul class="px-4 pt-3 d-flex align-items-between list-inline">
@@ -59,9 +58,9 @@
 			</div>
 		</ul>
 		<!-- Title -->
-		<h4 class="px-5 py-4 border-bottom text-danger">Advanced Search</h4>
+		<h4 class="px-sm-5 p-4 border-bottom text-danger">Advanced Search</h4>
 		<!-- Content -->
-		<div class="d-flex flex-column gap-4 p-5">
+		<div class="px-sm-5 p-4 d-flex flex-column gap-4">
 			<!-- Headline -->
 			<div class="d-flex align-items-center row">
 				<h6 class="m-0 col-5 col-sm-4 col-md-3 col-lg-2 fw-normal">
@@ -80,14 +79,16 @@
 				class="d-flex flex-column gap-3"
 			>
 				<!-- All these words -->
-				<div class="d-flex align-items-center">
-					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
+				<div
+					class="d-flex flex-column flex-sm-row align-sm-items-center"
+				>
+					<div class="col-sm-4 col-md-3 col-lg-2">
 						<label for="as_q" class="f-13">all these words:</label>
 					</div>
 					<input
 						type="text"
 						name="as_q"
-						class="col-7 col-sm-6 col-md-6 col-lg-6"
+						class="col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
 					<div
@@ -100,8 +101,10 @@
 					</div>
 				</div>
 				<!-- This exact word or phrase -->
-				<div class="d-flex align-items-center">
-					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
+				<div
+					class="d-flex flex-column flex-sm-row align-sm-items-center"
+				>
+					<div class="col-sm-4 col-md-3 col-lg-2">
 						<label for="as_epq" class="f-13"
 							>this exact word or phrase:</label
 						>
@@ -109,7 +112,7 @@
 					<input
 						type="text"
 						name="as_epq"
-						class="col-7 col-sm-6 col-md-6 col-lg-6"
+						class="col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
 					<div
@@ -122,8 +125,10 @@
 					</div>
 				</div>
 				<!-- Any of these words -->
-				<div class="d-flex align-items-center">
-					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
+				<div
+					class="d-flex flex-column flex-sm-row align-sm-items-center"
+				>
+					<div class="col-sm-4 col-md-3 col-lg-2">
 						<label for="as_oq" class="f-13"
 							>any of these words:</label
 						>
@@ -131,7 +136,7 @@
 					<input
 						type="text"
 						name="as_oq"
-						class="col-7 col-sm-6 col-md-6 col-lg-6"
+						class="col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
 					<div
@@ -144,8 +149,10 @@
 					</div>
 				</div>
 				<!-- None of these words -->
-				<div class="d-flex align-items-center">
-					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
+				<div
+					class="d-flex flex-column flex-sm-row align-sm-items-center"
+				>
+					<div class="col-sm-4 col-md-3 col-lg-2">
 						<label for="as_eq" class="f-13"
 							>none of these words:</label
 						>
@@ -153,7 +160,7 @@
 					<input
 						type="text"
 						name="as_eq"
-						class="col-7 col-sm-6 col-md-6 col-lg-6"
+						class="col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
 					<div
@@ -166,9 +173,11 @@
 					</div>
 				</div>
 				<!-- Submit -->
-				<div class="d-flex align-items-center">
-					<div class="col-5 col-sm-4 col-md-3 col-lg-2"></div>
-					<div class="col-7 col-sm-6 col-md-6 col-lg-6 p-0">
+				<div
+					class="d-flex flex-column flex-sm-row align-sm-items-center"
+				>
+					<div class="col-sm-4 col-md-3 col-lg-2"></div>
+					<div class="col-sm-6 col-md-6 col-lg-6 p-0">
 						<div class="d-flex">
 							<input
 								type="submit"

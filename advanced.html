@@ -15,22 +15,19 @@
 
 	<body>
 		<!-- Header -->
-		<div class="d-flex mx-2">
+		<div class="d-flex px-4 pt-4">
 			<!-- Left / Logo -->
-			<div class="list-inline mx-4 my-1">
-				<div class="my-3 me-3 pt-1 list-inline-item">
-					<a href="index.html"
-						><img
-							src="static/logo.png"
-							alt="Go to Google Home"
-							style="width: 70px"
-					/></a>
-				</div>
-			</div>
+			 <ul class="list-inline">
+				<li class="list-inline-item">
+					<a href="index.html">
+						<img src="static/logo.png" alt="Go to Google Home" style="width: 70px;">
+					</a>
+				</li>
+			 </ul>
 			<!-- Right -->
-			<ul class="ms-auto me-0 mb-0 list-inline">
-				<!-- Google Search -->
-				<li class="mx-2 my-3 pt-1 list-inline-item">
+			<ul class="ms-auto me-0 d-flex justify-content-end column-gap-3">
+				<!-- Index -->
+				<li class="list-inline-item">
 					<a
 						href="index.html"
 						class="link-dark text-decoration-none f-13"
@@ -38,7 +35,7 @@
 					>
 				</li>
 				<!-- Products -->
-				<li class="ms-3 me-2 my-3 pt-1 list-inline-item">
+				<li class="list-inline-item">
 					<a href="https://www.google.com/intl/en/about/products">
 						<img
 							src="static/products.png"
@@ -48,11 +45,11 @@
 					</a>
 				</li>
 				<!-- Account -->
-				<li class="ms-3 me-2 my-3 list-inline-item">
+				<li class="list-inline-item">
 					<a href="https://accounts.google.com/">
 						<img
 							src="static/avatar.png"
-							alt="Google Account"
+							alt="Google apps"
 							class="img-account"
 						/>
 					</a>
@@ -66,14 +63,14 @@
 		</div>
 
 		<!-- Content -->
-		<div class="container p-0 mx-5">
+		<div class="px-5">
 			<!-- Headline -->
 			<div class="row mt-5 mb-2">
-				<div class="col-sm-2">
-					<h5 class="fw-normal mb-4">Find pages with...</h5>
+				<div class="col-5 col-sm-4 col-md-3 col-lg-2">
+					<div class="h6 fw-normal mb-4">Find pages with...</div>
 				</div>
-				<div class="col-sm-6"></div>
-				<div class="col-sm-4 ps-3">
+				<div class="col-7 col-sm-6 col-md-6 col-lg-6"></div>
+				<div class="col-sm-2 col-md-3 col-lg-4 ps-3 d-none d-lg-block">
 					<h6 class="text-secondary fw-bold">
 						To do this in the search box
 					</h6>
@@ -82,16 +79,18 @@
 			<form action="https://www.google.com/search">
 				<!-- All these words -->
 				<div class="row mb-3">
-					<div class="col-sm-2">
+					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
 						<label for="as_q" class="f-13">all these words:</label>
 					</div>
 					<input
 						type="text"
 						name="as_q"
-						class="col-sm-6"
+						class="col-7 col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
-					<div class="col-sm-4 ps-3 f-10 text-secondary">
+					<div
+						class="col-sm-2 col-md-3 col-lg-4 ps-3 d-none d-lg-block ps-3 f-10 text-secondary"
+					>
 						Type the important words:
 						<span class="ms-2 f-10 font-monospace"
 							>tricolor rat terrier</span
@@ -100,7 +99,7 @@
 				</div>
 				<!-- This exact word or phrase -->
 				<div class="row mb-3">
-					<div class="col-sm-2">
+					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
 						<label for="as_epq" class="f-13"
 							>this exact word or phrase:</label
 						>
@@ -108,10 +107,12 @@
 					<input
 						type="text"
 						name="as_epq"
-						class="col-sm-6"
+						class="col-7 col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
-					<div class="col-sm-4 ps-3 f-10 text-secondary">
+					<div
+						class="col-sm-2 col-md-3 col-lg-4 ps-3 d-none d-lg-block ps-3 ps-3 f-10 text-secondary"
+					>
 						Put exact words in quotes:
 						<span class="ms-2 f-10 font-monospace"
 							>"rat terrier"</span
@@ -120,7 +121,7 @@
 				</div>
 				<!-- Any of these words -->
 				<div class="row mb-3">
-					<div class="col-sm-2">
+					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
 						<label for="as_oq" class="f-13"
 							>any of these words:</label
 						>
@@ -128,10 +129,12 @@
 					<input
 						type="text"
 						name="as_oq"
-						class="col-sm-6"
+						class="col-7 col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
-					<div class="col-sm-4 ps-3 text-secondary f-10">
+					<div
+						class="col-sm-2 col-md-3 col-lg-4 ps-3 d-none d-lg-block ps-3 f-10 text-secondary"
+					>
 						Type OR between all the words you want:
 						<span class="f-10 ms-2 font-monospace">miniature</span>
 						OR
@@ -140,7 +143,7 @@
 				</div>
 				<!-- None of these words -->
 				<div class="row mb-3">
-					<div class="col-sm-2">
+					<div class="col-5 col-sm-4 col-md-3 col-lg-2">
 						<label for="as_eq" class="f-13"
 							>none of these words:</label
 						>
@@ -148,28 +151,33 @@
 					<input
 						type="text"
 						name="as_eq"
-						class="col-sm-6"
+						class="col-7 col-sm-6 col-md-6 col-lg-6"
 						autocomplete="off"
 					/>
-					<div class="col-sm-4 ps-3 text-secondary f-10">
+					<div
+						class="col-sm-2 col-md-3 col-lg-4 ps-3 d-none d-lg-block ps-3 f-10 text-secondary"
+					>
 						Put a minus sign just before words you don't want:
 						<span class="f-10 ms-2 font-monospace"
 							>-rodent, -"Jack Russell"</span
 						>
 					</div>
 				</div>
+				<!-- Submit -->
 				<div class="row mb-3">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-6 px-0 my-2">
+					<div class="col-5 col-sm-4 col-md-3 col-lg-2"></div>
+					<div class="col-7 col-sm-6 col-md-6 col-lg-6 p-0">
 						<div class="d-flex">
 							<input
 								type="submit"
-								class="btn btn-primary ms-auto px-3 py-2"
+								class="btn btn-primary ms-auto me-0 px-3 py-2"
 								value="Advanced Search"
 							/>
 						</div>
 					</div>
-					<div class="col-sm-4"></div>
+					<div
+						class="col-sm-2 col-md-3 col-lg-4 ps-3 d-none d-lg-block ps-3 f-10 text-secondary"
+					></div>
 				</div>
 			</form>
 		</div>

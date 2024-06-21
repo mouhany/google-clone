@@ -15,80 +15,78 @@
 
 	<body>
 		<!-- Header -->
-		<div class="d-flex px-4 pt-4">
-			<!-- Right -->
-			<ul class="ms-auto me-0 d-flex justify-content-end column-gap-3">
-				<!-- Image Search -->
-				<li class="list-inline-item">
-					<a
-						href="image.html"
-						class="link-dark text-decoration-none f-13"
-						>Image</a
-					>
-				</li>
-				<!-- Advanced Search -->
-				<li class="list-inline-item">
-					<a
-						href="advanced.html"
-						class="link-dark text-decoration-none f-13"
-						>Advanced</a
-					>
-				</li>
-				<!-- Products -->
-				<li class="list-inline-item">
-					<a href="https://www.google.com/intl/en/about/products">
-						<img
-							src="static/products.png"
-							alt="Google apps"
-							class="img-product"
-						/>
-					</a>
-				</li>
-				<!-- Account -->
-				<li class="list-inline-item">
-					<a href="https://accounts.google.com/">
-						<img
-							src="static/avatar.png"
-							alt="Google apps"
-							class="img-account"
-						/>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<!-- Content -->
-		<div class="text-center mx-3">
-			<!-- Logo -->
-			<img src="static/logo.png" alt="Google Logo" />
-			<!-- Search Field -->
-			<div class="my-3">
-				<form action="https://www.google.com/search">
-					<!-- Input -->
-					<input
-						type="text"
-						name="q"
-						class="main-input border my-3"
-						autocomplete="off"
-						autofocus
+		<ul
+			class="px-4 pt-3 d-flex justify-content-end column-gap-3 list-inline"
+		>
+			<!-- Image Search -->
+			<li class="list-inline-item">
+				<a href="image.html" class="link-dark text-decoration-none f-13"
+					>Image</a
+				>
+			</li>
+			<!-- Advanced Search -->
+			<li class="list-inline-item">
+				<a
+					href="advanced.html"
+					class="link-dark text-decoration-none f-13"
+					>Advanced</a
+				>
+			</li>
+			<!-- Products -->
+			<li class="list-inline-item">
+				<a href="https://www.google.com/intl/en/about/products">
+					<img
+						src="static/products.png"
+						alt="Google apps"
+						class="img-product"
 					/>
-					<!-- Buttons -->
-					<div class="d-flex justify-content-center my-2">
-						<input
-							type="submit"
-							class="btn btn-light m-2 px-3 py-2 rounded"
-							value="Google Search"
-						/>
-						<button
-							class="btn btn-light m-2 px-3 py-2 rounded"
-							name="btnI"
-							value="I'm Feeling Lucky"
-						>
-							I'm Feeling Lucky
-						</button>
-					</div>
-				</form>
+				</a>
+			</li>
+			<!-- Account -->
+			<li class="list-inline-item">
+				<a href="https://accounts.google.com/">
+					<img
+						src="static/avatar.png"
+						alt="Google apps"
+						class="img-account"
+					/>
+				</a>
+			</li>
+		</ul>
+		<!-- Content -->
+		<form
+			action="https://www.google.com/search"
+			class="d-flex align-items-center flex-column row-gap-5 px-4 text-center"
+		>
+			<!-- Logo -->
+			<img
+				src="static/logo.png"
+				alt="Google Logo"
+				class="img-fluid logo"
+			/>
+			<!-- Input -->
+			<input
+				type="text"
+				name="q"
+				class="main-input border"
+				autocomplete="off"
+				autofocus
+			/>
+			<!-- Buttons -->
+			<div class="d-flex justify-content-center gap-3">
+				<input
+					type="submit"
+					class="btn btn-light px-3 py-2 rounded"
+					value="Google Search"
+				/>
+				<button
+					class="btn btn-light px-3 py-2 rounded"
+					name="btnI"
+					value="I'm Feeling Lucky"
+				>
+					I'm Feeling Lucky
+				</button>
 			</div>
-		</div>
+		</form>
 	</body>
 </html>
